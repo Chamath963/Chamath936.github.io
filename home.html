@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeMasterVip (Home)</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <h1 class="brand-name">TradeMasterVip</h1>
+        <button class="home" id="home" data-url="home.html">Home</button>
+        <button class="PNL" id="PNL" data-url="index.html">PNL Report</button>
+        <button class="tutorial" id="tutorial" data-url="tutorial.html">Tutorial</button>
+        <button class="join" id="join" data-url="join.html">Join US</button>
+    </header>
+    <img class="logo" src="logo.png">
+    <script>
+        // JavaScript code to handle button click and open URL
+        document.getElementById('PNL').addEventListener('click', function() {
+          // Retrieve the URL from the data-url attribute
+          var url = this.getAttribute('data-url');
+          
+          // Open the URL in a new tab/window
+          window.open(url, '_blank');
+        });
+      </script>
+      
+      <script>
+          // JavaScript code to handle button click and open URL
+          document.getElementById('home').addEventListener('click', function() {
+            // Retrieve the URL from the data-url attribute
+            var url = this.getAttribute('data-url');
+            
+            // Open the URL in a new tab/window
+            window.open(url, '_blank');
+          });
+        </script>
+      
+      <script>
+          // JavaScript code to handle button click and open URL
+          document.getElementById('tutorial').addEventListener('click', function() {
+            // Retrieve the URL from the data-url attribute
+            var url = this.getAttribute('data-url');
+            
+            // Open the URL in a new tab/window
+            window.open(url, '_blank');
+          });
+        </script>
+
+        <script>
+          // JavaScript code to handle button click and open URL
+          document.getElementById('join').addEventListener('click', function() {
+            // Retrieve the URL from the data-url attribute
+            var url = this.getAttribute('data-url');
+            
+            // Open the URL in a new tab/window
+            window.open(url, '_blank');
+          });
+        </script>
+</body>
+</html>

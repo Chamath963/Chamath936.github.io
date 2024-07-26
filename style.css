@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.brand-name {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff5f6d, #ffc371, #86a8e7, #91eae4);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-animation 5s ease infinite;
+}
+
+.text1{
+    margin-left: 50%;
+    color: rgb(0, 217, 255);
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+main {
+    width: 80%;
+}
+
+.signal-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: #74efff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #b2bec3;
+}
+
+a {
+    color: #00b894;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#last-month-pnl {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.home {
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    color: black;
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.PNL{
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+}
+
+.tutorial{
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+}
+
+.join{
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+}
+
+
+.home:hover {
+    cursor: pointer;
+}
+
+.PNL:hover {
+    cursor: pointer;
+}
+
+.tutorial:hover {
+    cursor: pointer;
+}
+
+.join:hover {
+    cursor: pointer;
+}
+.text2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+@keyframes color-cycle {
+    0% {
+        background-color: #00b894;
+    }
+    50% {
+        background-color: #55efc4;
+    }
+    100% {
+        background-color: #00b894;
+    }
+}
+
+.box{
+    background-color: gray;
+}
