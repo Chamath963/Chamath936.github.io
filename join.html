@@ -14,7 +14,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start; /* Change to flex-start to align items to the top */
             height: 100vh;
             text-align: center;
         }
@@ -22,7 +22,7 @@
         header {
             width: 100%;
             background: #111;
-            padding: 20px 0;
+            padding: 40px 0; /* Increased padding to move content down */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
@@ -58,6 +58,10 @@
             to {
                 transform: translateY(-10px);
             }
+        }
+
+        .content {
+            padding-top: 20px; /* Added padding to move content down */
         }
 
         .text2 {
@@ -155,19 +159,21 @@
         </h1>
     </header>
 
-    <p class="text2">Join Us.</p>
+    <div class="content">
+        <p class="text2">Join Us.</p>
 
-    <p class="texta"><b>Join & get market ideas for free.</b></p>
-    <button id="join-telegram-group" class="button2" data-url="https://t.me/TradeMasterCryptoSignals">Join our free Analysis group</button>
+        <p class="texta"><b>Join & get market ideas for free.</b></p>
+        <button id="join-telegram-group" class="button2" data-url="https://t.me/TradeMasterCryptoSignals">Join our free Analysis group</button>
 
-    <p class="texta"><b>Join Free Signal Group.</b></p>
-    <button id="join-free-signal-group" class="button1" data-url="https://t.me/freecryptosignalsbytrademaster">Join Our Free Signal Group</button>
+        <p class="texta"><b>Join Free Signal Group.</b></p>
+        <button id="join-free-signal-group" class="button1" data-url="https://t.me/freecryptosignalsbytrademaster">Join Our Free Signal Group</button>
 
-    <p class="texta"><b>Our Premium members earn a lot of money every month, and we share our live PnL with you on this website. If you want to profit like that, join us now.</b></p>
-    <button id="join-vip-group" class="button3" data-url="https://wa.me/94760454700?text=I%20want%20join%20to%20vip%20group">Join Our VIP Group</button>
+        <p class="texta"><b>Our Premium members earn a lot of money every month, and we share our live PnL with you on this website. If you want to profit like that, join us now.</b></p>
+        <button id="join-vip-group" class="button3" data-url="https://wa.me/94760454700?text=I%20want%20join%20to%20vip%20group">Join Our VIP Group</button>
 
-    <div class="box">
-        <p class="last"><b>Thank You!</b></p>
+        <div class="box">
+            <p class="last"><b>Thank You!</b></p>
+        </div>
     </div>
 
     <script>
