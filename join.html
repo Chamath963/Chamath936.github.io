@@ -3,57 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TradeMasterVip (Join US)</title>
-    <link rel="stylesheet" href="join.css">
+    <title>TradeMasterVip (Join Us)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #141E30, #243B55);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background: #111;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .brand-name {
+            font-size: 2.5em;
+            color: #FFD700;
+            margin: 0;
+        }
+
+        .text2 {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        .texta {
+            font-size: 1.2em;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .button1, .button2, .button3 {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s ease;
+        }
+
+        .button1 {
+            background: #28a745;
+            color: #fff;
+        }
+
+        .button1:hover {
+            background: #218838;
+        }
+
+        .button2 {
+            background: #007bff;
+            color: #fff;
+        }
+
+        .button2:hover {
+            background: #0069d9;
+        }
+
+        .button3 {
+            background: #ffc107;
+            color: #fff;
+        }
+
+        .button3:hover {
+            background: #e0a800;
+        }
+
+        .box {
+            background: #333;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .last {
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1 class="brand-name">TradeMasterVip</h1>
     </header>
-    <center><p class="text2">Join Us.</p></center>
+
+    <p class="text2">Join Us.</p>
 
     <p class="texta"><b>Join & get market ideas for free.</b></p>
+    <button id="join-telegram-group" class="button2" data-url="https://t.me/TradeMasterCryptoSignals">Join our free Analysis group</button>
 
-<button id="join-telegram-group" class="button2" data-url="https://t.me/TradeMasterCryptoSignals">Join our free Analysis group</button><br><br>
-<p class="texta"><b>Join Free Signal Group.</b></p>
-<button id="join-free-signal-group" class="button1" data-url="https://t.me/freecryptosignalsbytrademaster">Join Our Free Signal Group</button><br><br>
-<p class="texta"><b>Our Premium members earn lot of money in everymonth and our live pnl share with u in this wesite.if you want to profit as that.Join us now.</b></p>
-<button id="join-vip-group" class="button3" data-url="https://wa.me/94760454700?text=I%20want%20join%20to%20vip%20group">Join Our VIP group</button><br><br>
+    <p class="texta"><b>Join Free Signal Group.</b></p>
+    <button id="join-free-signal-group" class="button1" data-url="https://t.me/freecryptosignalsbytrademaster">Join Our Free Signal Group</button>
 
-<div class="box">
-    <p class="last"><b>Thanks You!</b></p>
-</div>
-<script>
-    // JavaScript code to handle button click and open URL
-    document.getElementById('join-telegram-group').addEventListener('click', function() {
-      // Retrieve the URL from the data-url attribute
-      var url = this.getAttribute('data-url');
-      
-      // Open the URL in a new tab/window
-      window.open(url, '_blank');
-    });
-  </script>
-  
-  <script>
-      // JavaScript code to handle button click and open URL
-      document.getElementById('join-free-signal-group').addEventListener('click', function() {
-        // Retrieve the URL from the data-url attribute
-        var url = this.getAttribute('data-url');
-        
-        // Open the URL in a new tab/window
-        window.open(url, '_blank');
-      });
-    </script>
-  
-  <script>
-      // JavaScript code to handle button click and open URL
-      document.getElementById('join-vip-group').addEventListener('click', function() {
-        // Retrieve the URL from the data-url attribute
-        var url = this.getAttribute('data-url');
-        
-        // Open the URL in a new tab/window
-        window.open(url, '_blank');
-      });
+    <p class="texta"><b>Our Premium members earn a lot of money every month, and we share our live PnL with you on this website. If you want to profit like that, join us now.</b></p>
+    <button id="join-vip-group" class="button3" data-url="https://wa.me/94760454700?text=I%20want%20join%20to%20vip%20group">Join Our VIP Group</button>
+
+    <div class="box">
+        <p class="last"><b>Thank You!</b></p>
+    </div>
+
+    <script>
+        document.getElementById('join-telegram-group').addEventListener('click', function() {
+            var url = this.getAttribute('data-url');
+            window.open(url, '_blank');
+        });
+
+        document.getElementById('join-free-signal-group').addEventListener('click', function() {
+            var url = this.getAttribute('data-url');
+            window.open(url, '_blank');
+        });
+
+        document.getElementById('join-vip-group').addEventListener('click', function() {
+            var url = this.getAttribute('data-url');
+            window.open(url, '_blank');
+        });
     </script>
 </body>
 </html>
