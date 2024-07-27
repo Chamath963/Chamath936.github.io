@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,44 +9,33 @@
 <body>
     <header class="header" id="header">
         <h1 class="brand-name">TradeMasterVip</h1>
-        <button class="home" id="home" data-url="index.html">Home</button>
-        <button class="PNL" id="PNL" data-url="pnl.html">PNL Report</button>
-        <button class="tutorial" id="tutorial" data-url="tutorial.html">Tutorial</button>
-        <button class="join" id="join" data-url="join.html">Join US</button>
+        <button class="nav-button" id="home" data-url="index.html">Home</button>
+        <button class="nav-button" id="PNL" data-url="pnl.html">PNL Report</button>
+        <button class="nav-button" id="tutorial" data-url="tutorial.html">Tutorial</button>
+        <button class="nav-button" id="join" data-url="join.html">Join US</button>
     </header>
-    <img class="logo" src="logo.png" alt="TradeMasterVip Logo">
     <div class="content">
-        <h2>---</h2>
-        <p>Hello everyone!</p>
-        <p>Are you looking to succeed in crypto trading? Look no further! We are a team of experts dedicated to providing top-notch crypto trading signals. <span class="highlight">📈💹</span> Our methodologies include Elliott Wave Theory, pattern trading, Smart Money Concepts (SMC), and many other advanced techniques.</p>
-        <p>Our expert team ensures no losses by meticulously analyzing every aspect before making a trade. We implement a robust money management strategy where, even if a trade hits the stop-loss, the maximum loss is capped at 50%. However, when our trades hit the take-profit, the gains are significantly higher, often exceeding 200%. <span class="highlight">📊💰</span> This is our winning SL/TP ratio.</p>
-        <p>We are available 24/7 to support you, ensuring you never miss an opportunity. <span class="highlight">🕒💪</span></p>
-        <p>For those who want the best, we offer an exclusive VIP plan:</p>
-        <p class="highlight">✨ Monthly Plan: $20 now just 10$!</p>
-        <p class="highlight">✨ Yearly Plan: $240 now only 99$!</p>
-        <p>Join us and watch your investments grow. We have the expertise to make you rich! <span class="highlight">🚀💵</span></p>
-        <h2>---</h2>
+        <img class="logo" src="logo.png" alt="TradeMaster Logo">
+        <div class="text-block">
+            <p class="intro-text">---</p>
+            <p class="intro-text">Hello everyone!</p>
+            <p class="intro-text">Are you looking to succeed in crypto trading? Look no further! We are a team of experts dedicated to providing top-notch crypto trading signals. 📈💹 Our methodologies include Elliott Wave Theory, pattern trading, Smart Money Concepts (SMC), and many other advanced techniques.</p>
+            <p class="intro-text">Our expert team ensures no losses by meticulously analyzing every aspect before making a trade. We implement a robust money management strategy where, even if a trade hits the stop-loss, the maximum loss is capped at 50%. However, when our trades hit the take-profit, the gains are significantly higher, often exceeding 200%. 📊💰 This is our winning SL/TP ratio.</p>
+            <p class="intro-text">We are available 24/7 to support you, ensuring you never miss an opportunity. 🕒💪</p>
+            <p class="intro-text">For those who want the best, we offer an exclusive VIP plan:</p>
+            <p class="intro-text">✨ Monthly Plan: $20 now just $10!</p>
+            <p class="intro-text">✨ Yearly Plan: $240 now only $99!</p>
+            <p class="intro-text">Join us and watch your investments grow. We have the expertise to make you rich! 🚀💵</p>
+            <p class="intro-text">---</p>
+        </div>
     </div>
     <script>
         // JavaScript code to handle button click and open URL
-        document.getElementById('PNL').addEventListener('click', function() {
-            var url = this.getAttribute('data-url');
-            window.open(url, '_blank');
-        });
-
-        document.getElementById('home').addEventListener('click', function() {
-            var url = this.getAttribute('data-url');
-            window.open(url, '_blank');
-        });
-
-        document.getElementById('tutorial').addEventListener('click', function() {
-            var url = this.getAttribute('data-url');
-            window.open(url, '_blank');
-        });
-
-        document.getElementById('join').addEventListener('click', function() {
-            var url = this.getAttribute('data-url');
-            window.open(url, '_blank');
+        document.querySelectorAll('.nav-button').forEach(button => {
+            button.addEventListener('click', function() {
+                var url = this.getAttribute('data-url');
+                window.open(url, '_blank');
+            });
         });
     </script>
 </body>
