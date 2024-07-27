@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,49 +15,40 @@
         <button class="tutorial" id="tutorial" data-url="tutorial.html">Tutorial</button>
         <button class="join" id="join" data-url="join.html">Join US</button>
     </header>
-    <img class="logo" src="logo.png">
+    <img class="logo" src="logo.png" alt="TradeMasterVip Logo">
+    <div class="content">
+        <h2>---</h2>
+        <p>Hello everyone!</p>
+        <p>Are you looking to succeed in crypto trading? Look no further! We are a team of experts dedicated to providing top-notch crypto trading signals. <span class="highlight">📈💹</span> Our methodologies include Elliott Wave Theory, pattern trading, Smart Money Concepts (SMC), and many other advanced techniques.</p>
+        <p>Our expert team ensures no losses by meticulously analyzing every aspect before making a trade. We implement a robust money management strategy where, even if a trade hits the stop-loss, the maximum loss is capped at 50%. However, when our trades hit the take-profit, the gains are significantly higher, often exceeding 200%. <span class="highlight">📊💰</span> This is our winning SL/TP ratio.</p>
+        <p>We are available 24/7 to support you, ensuring you never miss an opportunity. <span class="highlight">🕒💪</span></p>
+        <p>For those who want the best, we offer an exclusive VIP plan:</p>
+        <p class="highlight">✨ Monthly Plan: $20 now just 10$!</p>
+        <p class="highlight">✨ Yearly Plan: $240 now only 99$!</p>
+        <p>Join us and watch your investments grow. We have the expertise to make you rich! <span class="highlight">🚀💵</span></p>
+        <h2>---</h2>
+    </div>
     <script>
         // JavaScript code to handle button click and open URL
         document.getElementById('PNL').addEventListener('click', function() {
-          // Retrieve the URL from the data-url attribute
-          var url = this.getAttribute('data-url');
-          
-          // Open the URL in a new tab/window
-          window.open(url, '_blank');
+            var url = this.getAttribute('data-url');
+            window.open(url, '_blank');
         });
-      </script>
-      
-      <script>
-          // JavaScript code to handle button click and open URL
-          document.getElementById('home').addEventListener('click', function() {
-            // Retrieve the URL from the data-url attribute
-            var url = this.getAttribute('data-url');
-            
-            // Open the URL in a new tab/window
-            window.open(url, '_blank');
-          });
-        </script>
-      
-      <script>
-          // JavaScript code to handle button click and open URL
-          document.getElementById('tutorial').addEventListener('click', function() {
-            // Retrieve the URL from the data-url attribute
-            var url = this.getAttribute('data-url');
-            
-            // Open the URL in a new tab/window
-            window.open(url, '_blank');
-          });
-        </script>
 
-        <script>
-          // JavaScript code to handle button click and open URL
-          document.getElementById('join').addEventListener('click', function() {
-            // Retrieve the URL from the data-url attribute
+        document.getElementById('home').addEventListener('click', function() {
             var url = this.getAttribute('data-url');
-            
-            // Open the URL in a new tab/window
             window.open(url, '_blank');
-          });
-        </script>
+        });
+
+        document.getElementById('tutorial').addEventListener('click', function() {
+            var url = this.getAttribute('data-url');
+            window.open(url, '_blank');
+        });
+
+        document.getElementById('join').addEventListener('click', function() {
+            var url = this.getAttribute('data-url');
+            window.open(url, '_blank');
+        });
+    </script>
 </body>
 </html>
