@@ -1,69 +1,76 @@
-/* home.css */
-
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 .header {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
 }
 
 .brand-name {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    color: #f0a500;
+    font-size: 24px;
 }
 
 .nav-button {
-    background-color: #fff;
-    border: 2px solid #007BFF;
-    color: #007BFF;
-    margin: 0 10px;
+    background-color: #555;
+    color: white;
+    border: none;
     padding: 10px 20px;
-    font-size: 1rem;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 5px;
+    font-size: 16px;
 }
 
 .nav-button:hover {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #777;
 }
 
 .content {
-    max-width: 800px;
-    margin: 40px auto;
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .logo {
-    max-width: 150px;
-    margin-bottom: 20px;
+    width: 150px;
+    height: auto;
 }
 
 .text-block {
-    text-align: left;
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
 
 .intro-text {
-    font-size: 1.1rem;
+    font-size: 18px;
+    color: #333;
     line-height: 1.6;
-    margin: 10px 0;
+}
+
+.intro-text:first-of-type {
+    margin-top: 0;
+}
+
+.intro-text:last-of-type {
+    margin-bottom: 0;
+}
+
+.intro-text::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #f0a500;
+    margin-bottom: 10px;
 }
